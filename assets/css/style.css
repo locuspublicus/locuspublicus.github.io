@@ -317,6 +317,24 @@ main { flex: 1; padding: 1.5rem 0 5rem; }
   letter-spacing: 0.06em;
 }
 
+/* Fußnoten / Quellen */
+.text sup { line-height: 0; }
+.text sup a, .text a.footnote {
+  font-family: var(--maschine);
+  font-size: 0.75em;
+  text-decoration: none;
+  padding: 0 0.1em;
+}
+.text .footnotes {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #cdb999;
+}
+.text .footnotes ol { padding-left: 1.4rem; }
+.text .footnotes li { margin-bottom: 0.7rem; overflow-wrap: anywhere; }
+.text .reversefootnote { text-decoration: none; margin-left: 0.3em; }
+
 /* ---------- Fußzeile ---------- */
 .fuss {
   padding: 2rem 0 2.5rem;
