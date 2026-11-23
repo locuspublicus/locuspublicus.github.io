@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Classics and the Classes: Who Gets to Dress Sustainably?"
-date: 2026-11-23 18:00:00 +0100
+date: 2026-11-23 12:00:00 +0100
 description: "Slow fashion sells us shirts that last a decade. Most of the planet can't afford the first payment. On classism, conscience and the new classics."
 ---
 
