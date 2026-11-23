@@ -4,24 +4,24 @@
 # ============================================
 
 title: Locus Publicus
-untertitel: Ein öffentlicher Ort für Gedanken
+untertitel: A Public Space for Modern Day MAdness
 description: >-
-  Gedanken über Business Development, KI und ein klareres, gesünderes Leben.
-author: Alexis
-email: deine@email.de
+ Thoughts about the modern day madness and personal psychtherapy. 
+author: Hakbard
+email: hakbardcelion@proton.me
 
-url: "https://DEIN-GITHUB-NAME.github.io"
+url: "https://locuspublicus.github.io"
 baseurl: ""
 
-lang: de
+lang: eng
 timezone: Europe/Berlin
 
 # Menü unter dem Titel (Reihenfolge hier ändern)
 navigation:
-  - titel: Beiträge
-    url: /
-  - titel: Über mich
-    url: /ueber-mich/
+  - titel: Posts
+    url: /posts/
+  - titel: About
+    url: /about/
 
 # Erweiterungen: RSS-Feed, Google-freundliche Meta-Daten, Sitemap
 plugins:
