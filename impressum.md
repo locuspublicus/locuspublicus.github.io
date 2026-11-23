@@ -6,12 +6,13 @@ permalink: /impressum/
 
 **Angaben gemäß § 5 DDG**
 
-[Vor- und Nachname]
-[Straße und Hausnummer]
-[PLZ Ort]
+Hakbard Celion
+Main Street 777
+ 14,01° S, 58,59° W
+ Valles Marineris
 
-**Kontakt**
-E-Mail: [deine@email.de]
+**Contact**
+E-Mail: hakbardcelion@proton.me
 
-**Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV**
-[Vor- und Nachname, Anschrift wie oben]
+**Responsible for the content**
+Modern World Madness, an alter ego, and last but not least: The one who feels offended. 
