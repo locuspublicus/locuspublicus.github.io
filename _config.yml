@@ -4,28 +4,24 @@
 # ============================================
 
 title: Locus Publicus
+untertitel: Ein öffentlicher Ort für Gedanken
 description: >-
- Psychotherapy due to modern world madness
-author: Hakbard
-email: hakbardcelion@proton.me
+  Gedanken über Business Development, KI und ein klareres, gesünderes Leben.
+author: Alexis
+email: deine@email.de
 
-url: "https://locuspublicus.github.io"
+url: "https://DEIN-GITHUB-NAME.github.io"
 baseurl: ""
 
 lang: de
 timezone: Europe/Berlin
 
-# Design (wird von GitHub Pages direkt unterstützt)
-theme: minima
-
-minima:
-  social_links:
-    linkedin: LinkedIn is for posers only
-    github: Locus Publicus
-
-# Reihenfolge der Seiten oben im Menü
-header_pages:
-  - about-us.md
+# Menü unter dem Titel (Reihenfolge hier ändern)
+navigation:
+  - titel: Beiträge
+    url: /
+  - titel: Über mich
+    url: /ueber-mich/
 
 # Erweiterungen: RSS-Feed, Google-freundliche Meta-Daten, Sitemap
 plugins:
@@ -33,7 +29,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Lange Beitragsadressen kürzer machen: /2026/11/23/titel/
+# Beitragsadressen: /2026/11/23/titel/
 permalink: /:year/:month/:day/:title/
 
 show_excerpts: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

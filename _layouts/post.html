@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article>
+  <header class="beitrag-kopf">
+    {% include datum.html date=page.date %}
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+  <div class="text">
+    {{ content }}
+  </div>
+  <p class="zurueck"><a href="{{ '/' | relative_url }}">Alle Beiträge</a></p>
+</article>

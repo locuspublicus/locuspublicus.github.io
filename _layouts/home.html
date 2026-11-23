@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="einleitung">
+  {{ content }}
+</div>
+
+{%- if site.posts.size > 0 -%}
+<ul class="beitragsliste">
+  {%- for post in site.posts -%}
+  <li>
+    {% include datum.html date=post.date %}
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+    {%- if site.show_excerpts -%}
+      <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+    {%- endif -%}
+  </li>
+  {%- endfor -%}
+</ul>
+{%- else -%}
+<p class="leer">Noch keine Beiträge. Der erste ist in Arbeit.</p>
+{%- endif -%}

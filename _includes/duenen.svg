@@ -1,0 +1,20 @@
+<svg class="duenen" viewBox="0 0 1440 360" preserveAspectRatio="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="d1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a4a26"/><stop offset="1" stop-color="#4a2a18"/>
+    </linearGradient>
+    <linearGradient id="d2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5b3220"/><stop offset=".55" stop-color="#3a2216"/><stop offset="1" stop-color="#26180f"/>
+    </linearGradient>
+    <linearGradient id="d3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a1a11"/><stop offset="1" stop-color="#17110d"/>
+    </linearGradient>
+  </defs>
+  <!-- ferne Dünen -->
+  <path fill="url(#d1)" d="M0 210 C 160 170, 300 160, 470 188 S 760 150, 930 176 S 1250 140, 1440 168 V360 H0 Z"/>
+  <!-- mittlere Dünen mit scharfem Grat -->
+  <path fill="url(#d2)" d="M0 262 C 140 236, 250 214, 400 226 C 520 236, 600 196, 760 214 L 790 218 C 920 238, 1050 206, 1180 222 C 1290 236, 1370 220, 1440 228 V360 H0 Z"/>
+  <path fill="#6e3d22" opacity=".35" d="M760 214 L 790 218 C 700 250, 620 262, 520 268 C 610 248, 690 228, 760 214 Z"/>
+  <!-- nahe Düne -->
+  <path fill="url(#d3)" d="M0 312 C 220 278, 420 290, 620 304 C 820 318, 1000 284, 1200 292 C 1320 297, 1400 306, 1440 310 V360 H0 Z"/>
+</svg>

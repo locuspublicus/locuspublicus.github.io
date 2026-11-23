@@ -1,0 +1,345 @@
+/* ==========================================================
+   Locus Publicus – Wüstennacht
+   ========================================================== */
+
+/* ---------- Schriften (lokal, ohne Google-Server) ---------- */
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dm-sans.woff") format("woff");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/dm-sans-italic.woff") format("woff");
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("../fonts/anonymous-pro.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* ---------- Farben: Wüste bei Nacht ---------- */
+:root {
+  color-scheme: dark;
+  --nacht: #17110d;        /* Wüstenboden bei Nacht */
+  --nacht-hell: #221913;   /* Flächen, Code, Zitate */
+  --sand: #ead7b7;         /* Fließtext */
+  --staub: #a8916f;        /* Datum, Nebeninfos */
+  --gewuerz: #e08a3c;      /* Akzent: Links */
+  --glut: #f2b25c;         /* Sonne, Hover */
+  --himmel-oben: #1c1512;
+  --himmel-mitte: #4a2616;
+  --himmel-horizont: #b4532a;
+  --linie: rgba(234, 215, 183, 0.12);
+
+  --text: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --maschine: "Anonymous Pro", "Courier New", monospace;
+  --mass: 38rem;
+}
+
+/* ---------- Grundlagen ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  font-size: 106.25%; /* 17px */
+  -webkit-text-size-adjust: 100%;
+  background: var(--nacht);
+}
+
+body {
+  margin: 0;
+  background: var(--nacht);
+  color: var(--sand);
+  font-family: var(--text);
+  font-weight: 350;
+  line-height: 1.68;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Filmkorn wie feiner Sandstaub */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.16;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='k'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.92  0 0 0 0 0.84  0 0 0 0 0.72  0 0 0 1.6 -0.35'/></filter><rect width='100%' height='100%' filter='url(%23k)'/></svg>");
+  mix-blend-mode: soft-light;
+}
+
+a {
+  color: var(--gewuerz);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+a:hover { color: var(--glut); }
+
+strong { font-weight: 600; color: #f6e8cf; }
+
+:focus-visible {
+  outline: 1px solid var(--glut);
+  outline-offset: 4px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: var(--sand);
+  color: var(--nacht);
+  padding: 0.5rem 0.9rem;
+  font-family: var(--maschine);
+  font-size: 0.85rem;
+  z-index: 200;
+}
+.skip-link:focus { top: 1rem; }
+
+.huelle {
+  width: 100%;
+  max-width: calc(var(--mass) + 2rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ---------- Horizont: Himmel, Sonne, Dünen ---------- */
+.horizont {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  text-align: center;
+  padding: 5.5rem 1rem 15rem;
+  background: linear-gradient(to bottom,
+    var(--himmel-oben) 0%,
+    var(--himmel-mitte) 55%,
+    var(--himmel-horizont) 82%,
+    #c7703a 100%);
+}
+.horizont--klein { padding: 2.6rem 1rem 8rem; }
+
+.sonne {
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  bottom: -3.5rem;            /* Sonne sinkt hinter die Dünen */
+  width: min(24rem, 70vw);
+  aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(255, 214, 150, 0.95) 0 22%,
+    rgba(242, 160, 80, 0.55) 30%,
+    rgba(224, 110, 50, 0.18) 48%,
+    transparent 68%);
+  animation: aufgang 3s cubic-bezier(.2,.6,.2,1) both;
+}
+.horizont--klein .sonne { width: min(13rem, 46vw); bottom: -2.6rem; animation: none; }
+
+@keyframes aufgang {
+  from { transform: translate(-50%, 18%); opacity: 0.2; }
+}
+
+.duenen {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 14rem;
+}
+.horizont--klein .duenen { height: 8rem; }
+
+.wortmarke {
+  display: block;
+  width: min(42rem, 88vw);
+  height: auto;
+  margin: 0 auto;
+  color: var(--sand);
+  filter: drop-shadow(0 0 18px rgba(242, 178, 92, 0.25));
+}
+.horizont--klein .wortmarke { width: min(22rem, 72vw); }
+.titel { margin: 0; }
+.titel a { display: block; color: inherit; }
+
+.untertitel {
+  margin: 1.6rem 0 0;
+  font-family: var(--maschine);
+  font-size: 0.9rem;
+  letter-spacing: 0.3em;
+  color: var(--staub);
+}
+
+.navigation {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 2rem;
+  font-family: var(--maschine);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+}
+.horizont--klein .navigation { margin-top: 1.3rem; }
+.navigation a {
+  color: var(--sand);
+  text-decoration: none;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid transparent;
+}
+.navigation a:hover,
+.navigation a[aria-current="page"] {
+  color: var(--glut);
+  border-bottom-color: var(--glut);
+}
+
+.visuell-versteckt {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- Inhalt ---------- */
+main { flex: 1; padding: 1.5rem 0 5rem; }
+
+.einleitung {
+  font-size: 1.25rem;
+  line-height: 1.55;
+  font-weight: 300;
+  margin: 1rem 0 3.5rem;
+  color: #f1e2c7;
+}
+.einleitung p { margin: 0; }
+
+.beitragsliste { list-style: none; margin: 0; padding: 0; }
+.beitragsliste li {
+  position: relative;
+  padding: 2.2rem 0;
+  border-top: 1px solid var(--linie);
+}
+.beitragsliste h2 {
+  margin: 0.35rem 0 0.6rem;
+  font-size: 1.55rem;
+  line-height: 1.25;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.beitragsliste h2 a { color: var(--sand); text-decoration: none; }
+.beitragsliste h2 a:hover { color: var(--glut); }
+.beitragsliste p { margin: 0; color: #cdb999; }
+.leer { color: var(--staub); font-family: var(--maschine); }
+
+.datum {
+  font-family: var(--maschine);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--staub);
+}
+
+.beitrag-kopf { margin: 1.5rem 0 2.8rem; }
+.beitrag-kopf h1 {
+  margin: 0.4rem 0 0;
+  font-size: clamp(2rem, 6vw, 2.9rem);
+  line-height: 1.12;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #f6e8cf;
+}
+
+.text h2 { font-size: 1.45rem; line-height: 1.3; margin: 2.8rem 0 0.8rem; font-weight: 500; color: #f6e8cf; }
+.text h3 { font-size: 1.15rem; line-height: 1.35; margin: 2rem 0 0.6rem; font-weight: 600; }
+.text p, .text ul, .text ol { margin: 0 0 1.2rem; }
+.text li { margin-bottom: 0.4rem; }
+.text li::marker { color: var(--gewuerz); }
+
+.text blockquote {
+  margin: 2.2rem 0;
+  padding: 0.2rem 0 0.2rem 1.4rem;
+  border-left: 2px solid var(--gewuerz);
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #f1e2c7;
+}
+.text blockquote p:last-child { margin-bottom: 0; }
+
+/* Bilder: warm getönt wie im Wüstenlicht */
+.text img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2.2rem auto;
+  filter: sepia(.25) saturate(1.1) contrast(1.05) brightness(.92);
+}
+
+.text code {
+  font-family: var(--maschine);
+  font-size: 0.92em;
+  background: var(--nacht-hell);
+  padding: 0.1em 0.4em;
+  color: var(--glut);
+}
+.text pre {
+  overflow-x: auto;
+  padding: 1rem 1.2rem;
+  background: var(--nacht-hell);
+  border: 1px solid var(--linie);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.text pre code { background: none; padding: 0; }
+
+.text hr {
+  border: 0;
+  height: 1px;
+  width: 4rem;
+  margin: 3rem auto;
+  background: var(--gewuerz);
+  opacity: 0.7;
+}
+
+.zurueck {
+  margin-top: 3.5rem;
+  font-family: var(--maschine);
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+/* ---------- Fußzeile ---------- */
+.fuss {
+  padding: 2rem 0 2.5rem;
+  border-top: 1px solid var(--linie);
+  font-family: var(--maschine);
+  font-size: 0.85rem;
+  color: var(--staub);
+}
+.fuss .huelle { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.8rem 1.5rem; }
+.fuss nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; }
+.fuss a { color: var(--staub); text-decoration: none; }
+.fuss a:hover { color: var(--glut); }
+
+/* ---------- Mobil ---------- */
+@media (max-width: 30rem) {
+  .horizont { padding: 3.8rem 1rem 10.5rem; }
+  .sonne { bottom: -2.5rem; }
+  .duenen { height: 9rem; }
+  .untertitel { letter-spacing: 0.18em; font-size: 0.8rem; }
+  .einleitung { font-size: 1.12rem; }
+}
+
+/* ---------- Weniger Bewegung ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .sonne { animation: none; }
+}
