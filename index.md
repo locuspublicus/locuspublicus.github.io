@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Start
+title: Home
 ---
 
-Willkommen! Hier schreibe ich über Business Development, Künstliche Intelligenz und darüber, wie man klarer, fitter und glücklicher lebt.
+Welcome to Locus Publicus, a public place. Pull up a chair. You don't have to agree. You just have to think.

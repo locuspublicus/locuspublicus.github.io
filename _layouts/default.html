@@ -12,7 +12,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2317110d'/><circle cx='50' cy='58' r='22' fill='%23f2b25c'/><path d='M0 70 C30 58 60 62 100 66 V100 H0Z' fill='%234a2a18'/></svg>">
 </head>
 <body>
-  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+  <a class="skip-link" href="#inhalt">Skip to content</a>
 
   {%- assign ist_start = false -%}
   {%- if page.layout == "home" -%}{%- assign ist_start = true -%}{%- endif -%}
@@ -26,7 +26,7 @@
     {%- else -%}
       <p class="titel"><a href="{{ '/' | relative_url }}">{% include wortmarke.svg %}<span class="visuell-versteckt">{{ site.title }}</span></a></p>
     {%- endif -%}
-    <nav class="navigation" aria-label="Hauptmenü">
+    <nav class="navigation" aria-label="Main menu">
       {%- for punkt in site.navigation -%}
         <a href="{{ punkt.url | relative_url }}"{% if page.url == punkt.url %} aria-current="page"{% endif %}>{{ punkt.titel }}</a>
       {%- endfor -%}
@@ -42,10 +42,10 @@
   <footer class="fuss">
     <div class="huelle">
       <span>© {{ site.time | date: "%Y" }} {{ site.author }}</span>
-      <nav aria-label="Rechtliches">
+      <nav aria-label="Legal">
         <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
         <a href="{{ '/datenschutz/' | relative_url }}">Datenschutz</a>
-        <a href="{{ '/feed.xml' | relative_url }}">RSS-Feed</a>
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
       </nav>
     </div>
   </footer>

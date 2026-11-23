@@ -4,22 +4,22 @@
 # ============================================
 
 title: Locus Publicus
-untertitel: A Public Space for Modern Day MAdness
+untertitel: A Public Space for Modern Day Madness
 description: >-
- Thoughts about the modern day madness and personal psychtherapy. 
+ Thoughts about modern day madness and personal psychotherapy.
 author: Hakbard
 email: hakbardcelion@proton.me
 
 url: "https://locuspublicus.github.io"
 baseurl: ""
 
-lang: eng
+lang: en
 timezone: Europe/Berlin
 
 # Menü unter dem Titel (Reihenfolge hier ändern)
 navigation:
   - titel: Posts
-    url: /posts/
+    url: /
   - titel: About
     url: /about/
 
