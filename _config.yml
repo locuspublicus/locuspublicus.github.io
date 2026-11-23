@@ -1,0 +1,41 @@
+# ============================================
+# Grundeinstellungen deines Blogs
+# Ersetze DEIN-GITHUB-NAME durch deinen GitHub-Benutzernamen
+# ============================================
+
+title: Locus Publicus
+description: >-
+  Gedanken über Business Development, KI und ein klareres, gesünderes Leben.
+author: Alexis
+email: deine@email.de
+
+url: "https://DEIN-GITHUB-NAME.github.io"
+baseurl: ""
+
+lang: de
+timezone: Europe/Berlin
+
+# Design (wird von GitHub Pages direkt unterstützt)
+theme: minima
+
+minima:
+  social_links:
+    linkedin: DEIN-LINKEDIN-NAME
+    github: DEIN-GITHUB-NAME
+
+# Reihenfolge der Seiten oben im Menü
+header_pages:
+  - ueber-mich.md
+  - impressum.md
+  - datenschutz.md
+
+# Erweiterungen: RSS-Feed, Google-freundliche Meta-Daten, Sitemap
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Lange Beitragsadressen kürzer machen: /2026/11/23/titel/
+permalink: /:year/:month/:day/:title/
+
+show_excerpts: true
