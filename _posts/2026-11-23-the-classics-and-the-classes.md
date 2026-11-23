@@ -2,12 +2,18 @@
 layout: post
 title: "The Classics and the Classes: Who Gets to Dress Sustainably?"
 date: 2026-11-23 12:00:00 +0100
+excerpt: "Start with a white T-shirt. Organic cotton, built to survive a decade, about €85. Now hold it next to a different number: half of humanity lives on less than $6.85 a day."
 description: "Slow fashion sells us shirts that last a decade. Most of the planet can't afford the first payment. On classism, conscience and the new classics."
 ---
+
+
+<figure class="grafik">{% include grafiken/aufmacher-tshirt.svg %}<figcaption>Illustration: Locus Publicus</figcaption></figure>
 
 Start with a white T-shirt. Not a fancy one. Organic cotton, knitted in Germany on circular machines that are older than most people's grandparents, no side seams, built to survive a decade of washing. It costs about €85. Another loopwheeled version costs €105. It is, by every reasonable standard, a better object than the four-pack of polyester-blend tees you can buy for the price of a sandwich.
 
 Now hold it next to a different number. In 2019, the median human being on this planet lived on about US$7.60 a day. Forty-seven percent of humanity lived on less than $6.85.[^1] For half the species, that good white T-shirt is not a purchase. It is a week and a half of everything: food, rent, bus fare, medicine.
+
+<figure class="grafik">{% include grafiken/tage-medianeinkommen.svg %}<figcaption>Calculation based on Asket’s US price and the World Bank’s 2019 global median income.</figcaption></figure>
 
 That is the uncomfortable center of what I want to talk about. A new generation of clothing brands has made quality, longevity and honesty fashionable again. And the moment you love what they make, you run into a question they rarely ask out loud: *who is this world actually for?*
 
@@ -34,6 +40,9 @@ Sustainability, as currently sold, requires up-front capital. That turns a moral
 We don't have to guess how much of a premium T-shirt's price is the shirt. One of these brands tells us.
 
 Asket sells its standard organic cotton T-shirt for US$65 in its US store. According to its own published breakdown, the garment costs €11.10 to make and deliver: €4.20 for the fabric, €6.30 for labour, €0.40 for trims and €0.30 for transport. It's knitted, dyed, cut and sewn in northern Portugal, and Asket names each facility.[^3]
+
+
+<figure class="grafik">{% include grafiken/kosten-tshirt.svg %}<figcaption>Source: Asket’s published cost breakdown for its standard T-shirt. Components are rounded.</figcaption></figure>
 
 This is genuinely admirable transparency, and it deserves credit precisely because it lets us do the math. The finished shirt costs roughly a sixth of its retail price. The rest pays for design, overhead, marketing, retail, returns, taxes and margin. None of that is a scandal. Small companies with small volumes and honest suppliers are expensive to run.
 

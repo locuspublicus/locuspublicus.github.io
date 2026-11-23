@@ -317,6 +317,17 @@ main { flex: 1; padding: 1.5rem 0 5rem; }
   letter-spacing: 0.06em;
 }
 
+/* Grafiken im Beitrag */
+.grafik { margin: 2.6rem 0; }
+.grafik svg { display: block; width: 100%; height: auto; }
+.grafik figcaption {
+  margin-top: 0.6rem;
+  font-family: var(--maschine);
+  font-size: 0.78rem;
+  color: var(--staub);
+  text-align: center;
+}
+
 /* Fußnoten / Quellen */
 .text sup { line-height: 0; }
 .text sup a, .text a.footnote {

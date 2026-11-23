@@ -1,0 +1,11 @@
+<svg viewBox="0 0 640 230" role="img" aria-label="Asket T-shirt production cost of 11.10 euros: labour 6.30, fabric 4.20, trims 0.40, transport 0.30. Retail price US$65." xmlns="http://www.w3.org/2000/svg">
+<text x="60" y="40" fill="#ead7b7" font-family="'Anonymous Pro','Courier New',monospace" font-size="17">What it costs to make: €11.10</text>
+<rect x="60.0" y="70" width="292.5" height="44" fill="#e08a3c" opacity=".9"/><rect x="352.5" y="70" width="195.0" height="44" fill="#f2b25c" opacity=".9"/><rect x="547.5" y="70" width="18.6" height="44" fill="#a8916f" opacity=".9"/><rect x="566.1" y="70" width="13.9" height="44" fill="#ead7b7" opacity=".9"/>
+<text x="206.2" y="97" fill="#17110d" font-family="'Anonymous Pro','Courier New',monospace" font-size="15" text-anchor="middle">Labour €6.30</text>
+<text x="450.0" y="97" fill="#17110d" font-family="'Anonymous Pro','Courier New',monospace" font-size="15" text-anchor="middle">Fabric €4.20</text>
+<line x1="551.5" y1="114" x2="551.5" y2="136" stroke="#a8916f"/>
+<text x="580.0" y="152" fill="#a8916f" font-family="'Anonymous Pro','Courier New',monospace" font-size="13" text-anchor="end">Trims €0.40 · Transport €0.30</text>
+<line x1="60" y1="186" x2="580" y2="186" stroke="rgba(234,215,183,0.18)"/>
+<text x="60" y="212" fill="#ead7b7" font-family="'Anonymous Pro','Courier New',monospace" font-size="15">What it costs to buy: US$65</text>
+<text x="580" y="212" fill="#a8916f" font-family="'Anonymous Pro','Courier New',monospace" font-size="13" text-anchor="end">≈ 1/6 is the shirt</text>
+</svg>
