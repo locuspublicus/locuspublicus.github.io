@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Magazine-style cover: a crumbling Greek temple in the background, in front of it a ballot box with a single ballot marked X going into the slot and a heavy padlock on the front, labelled: next voice in 1,461 days. Headline: Vote. And shut up." font-family="'Anonymous Pro', monospace">
+<rect width="1200" height="800" fill="#17110d"/>
+<text x="60" y="72" fill="#a8916f" font-size="18" letter-spacing="6">LOCUS PUBLICUS</text>
+<text x="1140" y="72" fill="#a8916f" font-size="18" letter-spacing="4" text-anchor="end">NOVEMBER 2026</text>
+<line x1="60" y1="92" x2="1140" y2="92" stroke="#a8916f" stroke-width="1.5"/>
+<text x="56" y="188" fill="#ead7b7" font-size="96" font-weight="bold">VOTE.</text>
+<text x="56" y="288" fill="#f2b25c" font-size="96" font-weight="bold">AND SHUT UP.</text>
+<g opacity="0.85">
+<polygon points="90,400 325,320 560,400" fill="#2a1f17" stroke="#a8916f" stroke-width="2.5" stroke-linejoin="miter"/>
+<rect x="80" y="400" width="490" height="22" fill="#2a1f17" stroke="#a8916f" stroke-width="2.5"/>
+<rect x="105" y="422" width="30" height="218" fill="#2a1f17" stroke="#a8916f" stroke-width="2"/>
+<line x1="113" y1="428" x2="113" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="120" y1="428" x2="120" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="127" y1="428" x2="127" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<rect x="175" y="422" width="30" height="218" fill="#2a1f17" stroke="#a8916f" stroke-width="2"/>
+<line x1="183" y1="428" x2="183" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="190" y1="428" x2="190" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="197" y1="428" x2="197" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<rect x="245" y="422" width="30" height="218" fill="#2a1f17" stroke="#a8916f" stroke-width="2"/>
+<line x1="253" y1="428" x2="253" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="260" y1="428" x2="260" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="267" y1="428" x2="267" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<rect x="315" y="422" width="30" height="218" fill="#2a1f17" stroke="#a8916f" stroke-width="2"/>
+<line x1="323" y1="428" x2="323" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="330" y1="428" x2="330" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="337" y1="428" x2="337" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<rect x="385" y="422" width="30" height="218" fill="#2a1f17" stroke="#a8916f" stroke-width="2"/>
+<line x1="393" y1="428" x2="393" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="400" y1="428" x2="400" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="407" y1="428" x2="407" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<path d="M455,640 L455,520 L465,508 L473,522 L485,500 L485,640 Z" fill="#2a1f17" stroke="#a8916f" stroke-width="2"/>
+<rect x="449" y="626" width="42" height="14" fill="#2a1f17" stroke="#a8916f" stroke-width="2" transform="rotate(-8 470 633)"/>
+<rect x="525" y="422" width="30" height="218" fill="#2a1f17" stroke="#a8916f" stroke-width="2"/>
+<line x1="533" y1="428" x2="533" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="540" y1="428" x2="540" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+<line x1="547" y1="428" x2="547" y2="634" stroke="#a8916f" stroke-width="1" opacity=".45"/>
+</g>
+<path d="M430,358 L442,378 L436,392 L448,400" fill="none" stroke="#17110d" stroke-width="3"/>
+<polygon points="620,430 680,395 1080,395 1080,430" fill="#3a2c20" stroke="#a8916f" stroke-width="2.5"/>
+<rect x="620" y="430" width="460" height="210" fill="#2a1f17" stroke="#a8916f" stroke-width="2.5"/>
+<polygon points="790,415 802,407 940,407 928,415" fill="#17110d"/>
+<g transform="rotate(-6 865 340)"><rect x="815" y="250" width="100" height="160" fill="#ead7b7" stroke="#17110d" stroke-width="2"/>
+<circle cx="840" cy="282" r="9" fill="none" stroke="#17110d" stroke-width="2"/><line x1="855" y1="282" x2="900" y2="282" stroke="#a8916f" stroke-width="3"/>
+<circle cx="840" cy="314" r="9" fill="none" stroke="#17110d" stroke-width="2"/><path d="M832,306 L848,322 M848,306 L832,322" stroke="#e08a3c" stroke-width="4"/><line x1="855" y1="314" x2="900" y2="314" stroke="#a8916f" stroke-width="3"/>
+<circle cx="840" cy="346" r="9" fill="none" stroke="#17110d" stroke-width="2"/><line x1="855" y1="346" x2="900" y2="346" stroke="#a8916f" stroke-width="3"/></g>
+<text x="850" y="478" fill="#a8916f" font-size="20" letter-spacing="6" text-anchor="middle">BALLOT</text>
+<line x1="660" y1="492" x2="1040" y2="492" stroke="#a8916f" stroke-width="1" opacity=".5"/>
+<path d="M820,560 L820,532 A30,30 0 0 1 880,532 L880,560" fill="none" stroke="#ead7b7" stroke-width="9"/>
+<rect x="800" y="556" width="100" height="74" rx="6" fill="#e08a3c" stroke="#17110d" stroke-width="2"/>
+<circle cx="850" cy="584" r="8" fill="#17110d"/><rect x="846" y="588" width="8" height="22" fill="#17110d"/>
+<text x="700" y="560" fill="#ead7b7" font-size="15" text-anchor="middle" letter-spacing="2">NEXT VOICE</text>
+<text x="700" y="596" fill="#f2b25c" font-size="34" font-weight="bold" text-anchor="middle">1,461</text>
+<text x="700" y="620" fill="#ead7b7" font-size="15" text-anchor="middle" letter-spacing="2">DAYS</text>
+<text x="1000" y="560" fill="#ead7b7" font-size="15" text-anchor="middle" letter-spacing="2">TIME TO</text>
+<text x="1000" y="596" fill="#f2b25c" font-size="34" font-weight="bold" text-anchor="middle">90 s</text>
+<text x="1000" y="620" fill="#ead7b7" font-size="15" text-anchor="middle" letter-spacing="2">VOTE</text>
+<rect x="40" y="640" width="1120" height="6" fill="#a8916f"/>
+<line x1="60" y1="690" x2="1140" y2="690" stroke="#a8916f" stroke-width="1.5"/>
+<text x="60" y="732" fill="#ead7b7" font-size="28">Ninety seconds of power every four years.</text>
+<text x="60" y="768" fill="#ead7b7" font-size="28">Athens would have called it oligarchy.</text>
+<text x="1140" y="768" fill="#e08a3c" font-size="18" letter-spacing="4" text-anchor="end">BY HAKBARD</text>
+<rect x="8" y="8" width="1184" height="784" fill="none" stroke="#e08a3c" stroke-width="10"/>
+</svg>
