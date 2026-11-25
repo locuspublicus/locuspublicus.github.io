@@ -372,3 +372,18 @@ main { flex: 1; padding: 1.5rem 0 5rem; }
 @media (prefers-reduced-motion: reduce) {
   .sonne { animation: none; }
 }
+
+/* ---------- Abonnieren (RSS) ---------- */
+.abo-feld { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0 0 1.6rem; }
+.abo-feld input {
+  flex: 1 1 16rem; min-width: 0;
+  font: 0.95rem var(--maschine); color: var(--sand);
+  background: var(--nacht-hell); border: 1px solid var(--linie);
+  border-radius: 4px; padding: 0.6rem 0.8rem;
+}
+.abo-knopf {
+  font: 600 0.9rem var(--text); color: var(--nacht);
+  background: var(--gewuerz); border: 0; border-radius: 4px;
+  padding: 0.6rem 1.1rem; cursor: pointer;
+}
+.abo-knopf:hover, .abo-knopf:focus-visible { background: var(--glut); }

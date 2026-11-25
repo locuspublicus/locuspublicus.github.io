@@ -22,6 +22,8 @@ navigation:
     url: /
   - titel: About
     url: /about/
+  - titel: Subscribe
+    url: /subscribe/
 
 # Erweiterungen: RSS-Feed, Google-freundliche Meta-Daten, Sitemap
 plugins:
@@ -31,6 +33,11 @@ plugins:
 
 # Beitragsadressen: /2026/11/23/titel/
 permalink: /:year/:month/:day/:title/
+
+# RSS/Atom-Feed: nur Teaser + Link, keine kompletten Beiträge mit Grafiken.
+# Die lesbare Ansicht im Browser kommt aus feed.xslt.xml.
+feed:
+  excerpt_only: true
 
 show_excerpts: true
 
